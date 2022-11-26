@@ -1,25 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
+import { createRoot } from 'react-dom/client'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
-import Counter from './components/counter';
+import Main from './components/main'
 
-//const root = ReactDOM.createRoot(document.getElementById('root'));
-//root.render(
-//  <React.StrictMode>
-//    <App />
-//  </React.StrictMode>
-//);
-
-// const element = React.createElement(
-//     'h1',
-//     null,
-//     "Hello world"
-// );
-// ReactDOM.render(element, document.getElementById("root"));
-
-ReactDOM.render(<Counter/>, document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
+root.render(<Main tab="home" />)
 
 
 // If you want to start measuring performance in your app, pass a function
