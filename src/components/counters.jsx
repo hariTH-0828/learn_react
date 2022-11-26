@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 
 class Counters extends Component {
-    // state = { 
-    //     value: this.props.counter.value,
-    // };
-    
     styles = {
         fontWeight : 'bold',
         fontSize : 15,
@@ -17,9 +13,6 @@ class Counters extends Component {
         return classes;
     }
 
-    // handleIncrements = () => {
-    //     this.setState({ value: this.state.value + 1});
-    // };
     
     render() { 
         return (
